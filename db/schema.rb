@@ -37,10 +37,12 @@ ActiveRecord::Schema.define(version: 2021_05_13_155216) do
   end
 
   create_table "reviews", force: :cascade do |t|
+    t.bigint "brewery_id"
     t.boolean "would_recommend"
     t.text "comment"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["brewery_id"], name: "index_reviews_on_brewery_id"
   end
 
 end
