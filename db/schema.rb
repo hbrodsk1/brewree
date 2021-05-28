@@ -23,13 +23,14 @@ ActiveRecord::Schema.define(version: 2021_05_13_155216) do
     t.string "address_3"
     t.string "city"
     t.string "state"
-    t.string "country_province"
+    t.string "county_province"
     t.string "postal_code"
     t.string "country"
     t.string "longitude"
     t.string "latitude"
     t.string "phone"
     t.string "website_url"
+    t.string "obdb_id"
     t.integer "click_count", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
