@@ -1,0 +1,19 @@
+json.array! breweries do |brewery|
+  json.(brewery,
+  :id,
+  :name,
+  :brewery_type,
+  :street,
+  :address_2,
+  :address_3,
+  :city,
+  :state,
+  :county_province,
+  :postal_code,
+  :country,
+  :longitude,
+  :latitude,
+  :phone,
+  :click_count
+)
+end
